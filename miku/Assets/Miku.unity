@@ -755,7 +755,7 @@ Material:
       data:
         first:
           name: _EdgeSize
-        second: .00499999989
+        second: .0500000007
       data:
         first:
           name: _PostfixRenderQueue
@@ -977,7 +977,7 @@ Material:
       data:
         first:
           name: _EdgeSize
-        second: .00499999989
+        second: .0500000007
       data:
         first:
           name: _PostfixRenderQueue
@@ -4046,6 +4046,7 @@ GameObject:
   - 114: {fileID: 1973364970}
   - 114: {fileID: 1973364971}
   - 114: {fileID: 1973364972}
+  - 114: {fileID: 1973364973}
   m_Layer: 0
   m_Name: "Tda\u5F0F\u521D\u97F3\u30DF\u30AF\u30FB\u30A2\u30D8\u309A\u30F3\u30C8\u3099_Ver1.00"
   m_TagString: Untagged
@@ -11105,6 +11106,28 @@ MonoBehaviour:
   - morphName: "\u53E3\u89D2\u4E0B\u3052"
     morphSpeed: .800000012
     morphWeight: .5
+--- !u!114 &1973364973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973364515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b184e59bf8e4a493cafd5955c83403d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceName: megane
+  morphParams:
+  - morphName: "\u30E1\u30AC\u30CD"
+    morphSpeed: .00999999978
+    morphWeight: 1
+  - morphName: "\u56F0\u308B"
+    morphSpeed: .100000001
+    morphWeight: 1
+  - morphName: "\u7B11\u3044"
+    morphSpeed: .100000001
+    morphWeight: 1
 --- !u!1 &2022596612
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,8 @@ public class ChangeFace : MonoBehaviour {
 				face.SetFace ("shock");
 			if (Input.GetKeyDown (KeyCode.V))
 				face.SetFace ("angry");
+			if (Input.GetKeyDown (KeyCode.Space))
+				face.SetFace ("megane");
 		}
 	}
 }
