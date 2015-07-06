@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 public class VoiceSpeaker : MonoBehaviour
@@ -32,41 +33,42 @@ public class VoiceSpeaker : MonoBehaviour
 	
 	void Start ()
 	{
-		if( VoiceAvailable()>0 )
-		{
-			InitVoice(); // init the engine
+	}
+	public void SayThings(string text){
+		if (VoiceAvailable () > 0) {
+			InitVoice (); // init the engine
 			
-			if (voice_nb > GetVoiceCount()) voice_nb = 0;
-			if (voice_nb < 0) voice_nb = 0;
+			if (voice_nb > GetVoiceCount ())
+				voice_nb = 0;
+			if (voice_nb < 0)
+				voice_nb = 0;
 			
 			// Unity V4.x.x *******************************************
-			IntPtr pStr = GetVoiceName(voice_nb);
-			string str = Marshal.PtrToStringAnsi(pStr);
-			Debug.Log ("Voice name : "+str); // Voice Name
+			IntPtr pStr = GetVoiceName (voice_nb);
+			string str = Marshal.PtrToStringAnsi (pStr);
+			Debug.Log ("Voice name : " + str); // Voice Name
 			// Unity V4.x.x *******************************************
 			
 			//Debug.Log ("Voice name : "+GetVoiceName(voice_nb)); // Voice Name other Unity version
 			
-			Debug.Log ("Number of voice : "+GetVoiceCount()); // Number of voice
+			Debug.Log ("Number of voice : " + GetVoiceCount ()); // Number of voice
 			
-			SetVoice(voice_nb); // 0 to voiceCount - 1
-			Debug.Log ("Voice Rate : "+GetVoiceRate());
-			SetVoiceRate(1);
-			
-			//Debug.Log ("Voice name : "+GetVoiceName(voice_nb));
+			SetVoice (voice_nb); // 0 to voiceCount - 1
+			Debug.Log ("Voice Rate : " + GetVoiceRate ());
+			SetVoiceRate (1);
+			SayAndWait (text);
 
-			Say("All system nominal. Engine, online, weapons, online.. We are ready. 9.,.8.,.7.,.6.,.5.,.4.,.3.,.2.,.1.,.0.,. Go,.Take off");
 			// Say("Tout les systèmes sont opérationnels. Moteurs, en ligne. Armement, en ligne. Nous sommes prêt. 9.,.8.,.7.,.6.,.5.,.4.,.3.,.2.,.1.,.0.,. .Décollage" );
-			SpeakToFile("./Assets/test.wav","Something to say");
+			//SpeakToFile ("./Assets/test.wav", "Something to say");
 		}
-		Application.Quit();
 	}
-	
+
 	void OnDisable()
 	{
 		if( VoiceAvailable()>0 )
 		{
 			FreeVoice();
+			Debug.Log("voice freed");
 		}
 	}
 }

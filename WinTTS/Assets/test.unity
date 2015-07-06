@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &1861264194
 GameObject:
@@ -88,6 +87,7 @@ GameObject:
   - 124: {fileID: 1861264197}
   - 81: {fileID: 1861264196}
   - 114: {fileID: 1861264195}
+  - 114: {fileID: 1861264201}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -172,3 +172,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1861264201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1861264194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fa0d7e2d9dfb3498de95fab65141b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 10050
+  lastReceivedUDPPacket: 
+  allReceivedUDPPackets: 
