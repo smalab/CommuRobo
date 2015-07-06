@@ -51,10 +51,11 @@ public class VoiceSpeaker : MonoBehaviour
 			
 			SetVoice(voice_nb); // 0 to voiceCount - 1
 			Debug.Log ("Voice Rate : "+GetVoiceRate());
-			SetVoiceRate(2);
+			SetVoiceRate(1);
 			
 			//Debug.Log ("Voice name : "+GetVoiceName(voice_nb));
-			//Say("All system nominal. Engine, online, weapons, online.. We are ready. 9.,.8.,.7.,.6.,.5.,.4.,.3.,.2.,.1.,.0.,. Go,.Take off");
+
+			Say("All system nominal. Engine, online, weapons, online.. We are ready. 9.,.8.,.7.,.6.,.5.,.4.,.3.,.2.,.1.,.0.,. Go,.Take off");
 			// Say("Tout les systèmes sont opérationnels. Moteurs, en ligne. Armement, en ligne. Nous sommes prêt. 9.,.8.,.7.,.6.,.5.,.4.,.3.,.2.,.1.,.0.,. .Décollage" );
 			SpeakToFile("./Assets/test.wav","Something to say");
 		}
