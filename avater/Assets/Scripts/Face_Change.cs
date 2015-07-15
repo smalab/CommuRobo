@@ -15,7 +15,7 @@ public class Face_Change : MonoBehaviour {
 	public Sprite Sad;
 	public Sprite Excite;
 
-	private float time;
+	//private float time;
 	// Use this for initialization
 	void Start () {
 	
@@ -70,7 +70,7 @@ public class Face_Change : MonoBehaviour {
 			renderer.sprite = Excite;
 		}
 
-		time += Time.deltaTime;  /*瞬きを時間によって制御*/
+	/*	time += Time.deltaTime; 
 		Debug.Log(time);
 		if ((int)time % 7 == 3) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
@@ -79,7 +79,7 @@ public class Face_Change : MonoBehaviour {
 		else if ((int)time % 7 == 4) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
 			renderer.sprite = Normal;
-		}
+		}                                                                           */
 
 	}
 }
