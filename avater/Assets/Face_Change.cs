@@ -70,16 +70,32 @@ public class Face_Change : MonoBehaviour {
 			renderer.sprite = Excite;
 		}
 
-	/*	time += Time.deltaTime; 
-		Debug.Log(time);
-		if ((int)time % 7 == 3) {
+
+		//ボタンを押すことによって変化
+		if (Next_Scene_Positive.score < 0) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = Normal_2;
+			renderer.sprite = Sad;
 		}
-		else if ((int)time % 7 == 4) {
+		if (Next_Scene_Positive.score == 0) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
 			renderer.sprite = Normal;
-		}                                                                           */
+		}
+
+		if (Next_Scene_Positive.score == 1) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = A;
+		}
+
+		if (Next_Scene_Positive.score == 2) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = I;
+		}
+
+		if (Next_Scene_Positive.score >= 3) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = Smile;
+		}
+
 
 	}
 }
