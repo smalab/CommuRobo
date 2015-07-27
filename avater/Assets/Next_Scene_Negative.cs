@@ -15,7 +15,7 @@ public class Next_Scene_Negative : MonoBehaviour {
 	}
 	
 	public void Next_N (){ 
-		scene = Random.Range (0, 3);
+		scene = Random.Range (0, 4);
 		Application.LoadLevel(scene);
 		Debug.Log ("touch");
 		Next_Scene_Positive.score -= 1;
