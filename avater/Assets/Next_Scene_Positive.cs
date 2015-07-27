@@ -5,7 +5,7 @@ public class Next_Scene_Positive : MonoBehaviour {
 
 	private int scene;
 	public static int score = 0;
-
+	public double i =0;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,8 +15,14 @@ public class Next_Scene_Positive : MonoBehaviour {
 	void Update () {
 	
 	}
-
+	//onsei saiseigo scene no henkou
 public void Next_P (){ 
+		GetComponent<AudioSource>().Play();
+		while(i<100000000){
+
+			i += 0.1;
+		}
+
 		scene = Random.Range (0, 5);
 		Application.LoadLevel(scene);
 		Debug.Log ("touch");
