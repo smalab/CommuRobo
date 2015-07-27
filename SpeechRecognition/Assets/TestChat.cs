@@ -13,16 +13,16 @@ public class TestChat : MonoBehaviour, IChatClientListener {
 	private ChatChannel selectedChannel;
 
 
-//	IEnumerator Start ()
+	//IEnumerator Start ()
 	void Start ()
 	{
 		chatClient = new ChatClient( this );
 		chatClient.Connect(ChatAppId, "1.0", new AuthenticationValues(this.UserName));
 
-//		while (true) {
-//			this.chatClient.PublishMessage(ChannelsToJoinOnConnect[0], "says '15sec'.");
-//			yield return new WaitForSeconds (15.05f);
-//		}
+	//	while (true) {
+	//		this.chatClient.PublishMessage(ChannelsToJoinOnConnect[0], "says '15sec'.");
+	//		yield return new WaitForSeconds (15.05f);
+	//	}
 	}
 
 
@@ -38,7 +38,6 @@ public class TestChat : MonoBehaviour, IChatClientListener {
 	{
 		if (this.chatClient != null)
 		{
-			this.chatClient.PublishMessage(ChannelsToJoinOnConnect[0], "says 'chat will close'.");
 			this.chatClient.Disconnect();
 		}
 	}
@@ -121,4 +120,10 @@ public class TestChat : MonoBehaviour, IChatClientListener {
 	public void OnChatStateChange(ChatState state)
 	{
 	}
+
+    public void TextInput(string text)
+    {
+       this.chatClient.PublishMessage(ChannelsToJoinOnConnect[0], text);
+    }
+
 }

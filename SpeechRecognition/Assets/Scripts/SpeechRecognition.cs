@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class SpeechRecognition : MonoBehaviour {
 
+	TestChat _testChat;
+
 	// Use this for initialization
 	void Start () {
         var senseManager = GameObject.FindObjectOfType( typeof( SenseToolkitManager ) );
@@ -19,6 +21,7 @@ public class SpeechRecognition : MonoBehaviour {
 
         SenseToolkitManager.Instance.AddSpeechCommand( "赤" );
         SenseToolkitManager.Instance.AddSpeechCommand("テスト");
+        _testChat = GameObject.Find("PhotonChat").GetComponent<TestChat>();
     }
 
     // Update is called once per frame
@@ -29,7 +32,8 @@ public class SpeechRecognition : MonoBehaviour {
 
         if ( (SenseToolkitManager.Instance.SentencesRecognized != null) && (SenseToolkitManager.Instance.SentencesRecognized.Count != 0) ) {
             foreach (var s in SenseToolkitManager.Instance.SentencesRecognized ) {
-                Debug.Log( s );
+                _testChat.TextInput(s);
+                //Debug.Log( s );
             }
         }
     }
