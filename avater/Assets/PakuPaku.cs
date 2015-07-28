@@ -12,8 +12,8 @@ public class PakuPaku : MonoBehaviour {
 	
 	//口パク開始フラグ，口パク中，開けるか閉じるか，開き具合
 	bool is_paku_start;
-	bool is_paku;
-	bool is_paku_a;
+	bool is_paku;           //ako
+	bool is_paku_a;        // kao  
 	float face_a=0.0f;
 
 
