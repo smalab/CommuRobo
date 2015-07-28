@@ -22,7 +22,7 @@ public class VoiceButton : MonoBehaviour {
     void Update () {
 	    if (speechRecognition.currentText == textToHear)
         {
-            eventData.selectedObject = this.gameObject;
+            speechRecognition.currentText = "";
             voiceButton.Invoke(eventData);
         }
 	}

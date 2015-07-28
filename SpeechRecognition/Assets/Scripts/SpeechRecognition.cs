@@ -8,7 +8,7 @@ public class SpeechRecognition : MonoBehaviour {
 
     //TestChat _testChat; // for chat
 
-    public string currentText;
+    public string currentText = "";
     // Use this for initialization
 
     void Start () {
@@ -37,6 +37,7 @@ public class SpeechRecognition : MonoBehaviour {
             foreach (var s in SenseToolkitManager.Instance.SentencesRecognized ) {
                 // _testChat.TextInput(s); // for chat
                 currentText = s;
+                Debug.Log(s);
             }
         }
     }
