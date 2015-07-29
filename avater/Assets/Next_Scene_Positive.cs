@@ -30,8 +30,11 @@ public class Next_Scene_Positive : MonoBehaviour {
 
 	IEnumerator AudioEnd(){
 			yield return new WaitForSeconds(2);
-		
-		scene = Random.Range (0, 5);
+
+		scene = Application.loadedLevel;
+		while (scene == Application.loadedLevel) {
+			scene = Random.Range (1, 4);
+		}
 		Application.LoadLevel(scene);
 		Debug.Log ("touch");
 		score += 1;

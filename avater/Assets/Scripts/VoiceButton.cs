@@ -8,7 +8,7 @@ public class VoiceButton : MonoBehaviour {
     public UnityEngine.EventSystems.EventTrigger.TriggerEvent voiceButton;
 
     public string textToHear;
-
+	string[] textsToHear;
     private SpeechRecognition speechRecognition;
     BaseEventData eventData;
 
@@ -16,14 +16,16 @@ public class VoiceButton : MonoBehaviour {
     void Start () {
         speechRecognition = GameObject.Find("Speech").GetComponent<SpeechRecognition>();
         eventData = new BaseEventData(EventSystem.current);
+		textsToHear = textToHear.Split (';');
     }
 
     // Update is called once per frame
     void Update () {
-	    if (speechRecognition.currentText == textToHear)
-        {
-            speechRecognition.currentText = "";
-            voiceButton.Invoke(eventData);
-        }
+		foreach (string s in textsToHear) {
+			if (speechRecognition.currentText.Contains(s)) {
+				speechRecognition.currentText = "";
+				voiceButton.Invoke (eventData);
+			}
+		}
 	}
 }
