@@ -42,15 +42,13 @@ public class Next_Scene_Positive : MonoBehaviour {
 
 
 	//onsei saiseigo scene no henkou
-public void Next_P (){ 
-
-		GetComponent<AudioSource>().Play();
+	public void Next_P (){ 
 		Debug.Log (55);
 
 		StartCoroutine ("AudioEnd");
-
-
 	}
 
-
+	public void ButtonSound(){
+		GetComponent<AudioSource> ().Play ();
+	}
 }

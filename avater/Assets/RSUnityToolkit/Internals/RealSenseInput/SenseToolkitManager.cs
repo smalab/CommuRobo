@@ -24,7 +24,9 @@ namespace RSUnityToolkit
     /// </exception>
     public class SenseToolkitManager : MonoBehaviour 
 	{
-		
+
+		static bool AwakenBefore = false;
+
 		#region Public Static fields
 
         public static SenseToolkitManager Instance = null;
@@ -141,7 +143,12 @@ namespace RSUnityToolkit
 
         void Awake()
         {
-            if ( Instance != null ) {
+
+			Debug.Log ("SenseToolkitManager awaken:"+AwakenBefore);
+			if (AwakenBefore){return;}else{AwakenBefore = true;}
+			DontDestroyOnLoad(this);
+
+			if ( Instance != null ) {
                 throw new UnityException( "Only one instance of SenseToolkitManager in a scene is allowed." );
             }
             Instance = this;

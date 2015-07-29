@@ -10,9 +10,19 @@ public class SpeechRecognition : MonoBehaviour {
 
     public string currentText = "";
     // Use this for initialization
+	static bool AwakenBefore = false;
+	static bool StartedBefore = false;
+
+	void Awake (){
+		Debug.Log ("Awaking SpeechRecognition:"+AwakenBefore);
+		if (AwakenBefore){return;}else{AwakenBefore = true;}
+		DontDestroyOnLoad(this);
+	}
 
     void Start () {
-        var senseManager = GameObject.FindObjectOfType( typeof( SenseToolkitManager ) );
+		Debug.Log ("Starting SpeechRecognition:"+StartedBefore);
+		if (StartedBefore){return;}else{StartedBefore = true;}
+		var senseManager = GameObject.FindObjectOfType( typeof( SenseToolkitManager ) );
         if ( senseManager == null ) {
             Debug.LogWarning( "Sense Manager Object not found and was added automatically" );
             senseManager = (GameObject)Instantiate( Resources.Load( "SenseManager" ) );

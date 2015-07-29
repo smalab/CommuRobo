@@ -28,9 +28,13 @@ public class Next_Scene_Negative : MonoBehaviour {
 
 
 	public void Next_N (){ 
-		GetComponent<AudioSource>().Play();
 		Debug.Log (55);
 		
 		StartCoroutine ("AudioEnd");
 	}
+
+	public void ButtonSound(){
+		GetComponent<AudioSource> ().Play ();
+	}
+
 }
