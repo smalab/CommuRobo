@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 935b419b261ae5e498843a54c8071d14
+timeCreated: 1436934101
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mebati_0
+    21300002: mebati_1
+    21300004: mebati_2
+    21300006: mebati_3
+    21300008: mebati_4
+    21300010: mebati_5
+    21300012: mebati_6
+    21300014: mebati_7
+    21300016: mebati_8
+    21300018: mebati_9
+    21300020: mebati_10
+    21300022: mebati_11
+    21300024: mebati_12
+    21300026: mebati_13
+    21300028: mebati_14
+    21300030: mebati_15
+    21300032: mebati_16
+    21300034: mebati_17
+    21300036: mebati_18
+    21300038: mebati_19
+    21300040: mebati_20
+    21300042: mebati_21
+    21300044: mebati_22
+    21300046: mebati_23
+    21300048: mebati_24
+    21300050: mebati_25
+    21300052: mebati_26
+    21300054: mebati_27
+    21300056: mebati_28
+    21300058: mebati_29
+    21300060: mebati_30
+    21300062: mebati_31
+    21300064: mebati_32
+    21300066: mebati_33
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mebati_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 93
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 93
+        width: 17
+        height: 35
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 95
+        width: 122
+        height: 57
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_5
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_6
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_7
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 93
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_8
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_9
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 93
+        width: 17
+        height: 35
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_11
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_12
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_13
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 93
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_14
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 105
+        width: 52
+        height: 47
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_15
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 93
+        width: 17
+        height: 35
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_16
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_17
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_18
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 93
+        width: 54
+        height: 59
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_19
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 93
+        width: 52
+        height: 59
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_20
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_21
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 32
+        width: 122
+        height: 120
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_23
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_24
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_25
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_26
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_27
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_28
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_29
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 84
+        width: 5
+        height: 18
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_30
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 32
+        width: 118
+        height: 49
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_31
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 32
+        width: 118
+        height: 49
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_32
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 32
+        width: 118
+        height: 49
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mebati_33
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 32
+        width: 118
+        height: 49
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
