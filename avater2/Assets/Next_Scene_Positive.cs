@@ -33,7 +33,7 @@ public class Next_Scene_Positive : MonoBehaviour {
 
 		scene = Application.loadedLevel;
 		while (scene == Application.loadedLevel) {
-			scene = Random.Range (1, 10);
+			scene = Random.Range (1, 11);
 		}
 		Application.LoadLevel(scene);
 		Debug.Log ("touch");
