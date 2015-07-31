@@ -15,6 +15,23 @@ public class Face_Change : MonoBehaviour {
 	public Sprite Sad;
 	public Sprite Excite;
 
+	public Sprite Defalt0;
+	public Sprite Defalt1;
+	public Sprite Defalt2;
+	public Sprite Defalt3;
+	public Sprite Defalt4;
+	public Sprite Defalt5;
+	public Sprite Defalt6;
+	public Sprite Defalt7;
+	public Sprite Defalt8;
+	public Sprite Defalt9;
+	public Sprite Defalt10;
+	public Sprite Defalt11;
+	public Sprite Defalt12;
+	public Sprite Defalt13;
+	public Sprite Defalt14;
+
+
 	//private float time;
 	// Use this for initialization
 	void Start () {
@@ -24,7 +41,7 @@ public class Face_Change : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
+	/*	if (Input.GetKeyDown (KeyCode.Space)) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
 			renderer.sprite = Normal;
 		}
@@ -68,32 +85,58 @@ public class Face_Change : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.V)) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
 			renderer.sprite = Excite;
-		}
+		}                                                                              */
 
 
-		//ボタンを押すことによって変化
-		if (Next_Scene_Positive.score < 0) {
+
+
+
+
+		//scoreによって変化
+
+		//悲しみ
+		if (Next_Scene_Positive.score  <= -4) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = Sad;
+			renderer.sprite = Defalt8;
 		}
+		if (Next_Scene_Positive.score == -3) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = Defalt9;
+		}
+		if (Next_Scene_Positive.score == -2) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = Defalt7;
+		}
+		if (Next_Scene_Positive.score == -1) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = Defalt6;
+		}
+
+
+		//基準の表情
 		if (Next_Scene_Positive.score == 0) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = Normal;
+			renderer.sprite = Defalt0;
 		}
 
+		//喜び
 		if (Next_Scene_Positive.score == 1) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = A;
+			renderer.sprite = Defalt11;
 		}
 
 		if (Next_Scene_Positive.score == 2) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = I;
+			renderer.sprite = Defalt1;
 		}
 
 		if (Next_Scene_Positive.score >= 3) {
 			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
-			renderer.sprite = Smile;
+			renderer.sprite = Defalt3;
+		}
+		if (Next_Scene_Positive.score >= 4) {
+			SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer> (); 
+			renderer.sprite = Defalt2;
 		}
 
 
