@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PostureStatus : MonoBehaviour {
 
-	string postureString;
+    public string postureString;
 	// Use this for initialization
 	void Start () {
 		Input.gyro.enabled = true;

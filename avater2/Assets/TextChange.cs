@@ -3,16 +3,14 @@ using System.Collections;
 
 public class TextChange : MonoBehaviour {
 
-	PostureStatus posturestatus;
-
-
 	// Use this for initialization
 	void Start () {
 	
 	}
-	
+	public PostureStatus posturestatus;
+
 	// Update is called once per frame
 	void Update () {
-		this.GetComponent<Text> ().text = posturestatus.Getposture();
+		this.GetComponent<Text> ().text = posturestatus.Getposture ();
 	}
 }
