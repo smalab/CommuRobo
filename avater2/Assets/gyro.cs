@@ -11,9 +11,7 @@ public class gyro : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Debug.Log (Input.gyro.rotationRateUnbiased.x);
-
-
-		//Debug.Log ("attiude " + q);
+		
 
 	}
 }
