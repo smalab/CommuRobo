@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class PostureStatus : MonoBehaviour {
 
     public string postureString;
-	public int flag = 0;
+	public  static int flag = 0;
+	private int scene;
 	// Use this for initialization
 	void Start () {
 		Input.gyro.enabled = true;
@@ -23,6 +24,8 @@ public class PostureStatus : MonoBehaviour {
 			postureString = "I'm sleepy";
 			flag = 0;
 		}
+
+
 	}
 	 public string GetPosture(){
 		return postureString;
