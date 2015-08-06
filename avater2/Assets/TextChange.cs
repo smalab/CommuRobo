@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class TextChange : MonoBehaviour {
 
 	// Use this for initialization
@@ -10,7 +10,9 @@ public class TextChange : MonoBehaviour {
 	public PostureStatus posturestatus;
 
 	// Update is called once per frame
+	// postureString ni yori text change
 	void Update () {
-		this.GetComponent<Text> ().text = posturestatus.Getposture ();
+		this.GetComponent<Text> ().text = posturestatus.postureString;
 	}
+
 }
