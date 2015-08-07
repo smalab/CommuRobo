@@ -12,7 +12,8 @@ public class TextChange : MonoBehaviour {
 	// Update is called once per frame
 	// postureString ni yori text change
 	void Update () {
-		this.GetComponent<Text> ().text = posturestatus.postureString;
+
+		this.GetComponent<Text> ().text = PostureStatus.postureString;
 	}
 
 }

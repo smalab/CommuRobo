@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PostureStatus : MonoBehaviour {
 
-    public string postureString;
+    public static string postureString;
 	public  static int flag = 0;
 	private int scene;
 	// Use this for initialization
