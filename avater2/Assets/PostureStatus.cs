@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class PostureStatus : MonoBehaviour {
 
     public static string postureString;
-	public  static int flag = 0;
 	private int scene;
 	// Use this for initialization
 	void Start () {
@@ -17,17 +16,17 @@ public class PostureStatus : MonoBehaviour {
 		Debug.Log (Input.gyro.rotationRateUnbiased.x);
 		if (Input.gyro.rotationRateUnbiased.x < -2) {
 			postureString = "Please me Wake up";
-			flag = 1;
+
 		}
 
 		if (Input.gyro.rotationRateUnbiased.x > 2) {
-			postureString = "I'm sleepy";
-			flag = 0;
+			postureString = "nemui";
 		}
 
 
 	}
-	 public string GetPosture(){
+	 public static string GetPosture(){
 		return postureString;
 	}
 }
+	

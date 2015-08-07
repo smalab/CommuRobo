@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Linq;
 
-public class acceleration : MonoBehaviour {
+public class shaking : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -33,14 +33,16 @@ public class acceleration : MonoBehaviour {
 		if (Input.acceleration.y >-0.5)
 			flagyy = 1;
 
-		if (flagx == 1 && flagxx == 1 && flagy == 1 && flagyy == 1)
-			StartCoroutine("Accele");
+		if (flagx == 1 && flagxx == 1 && flagy == 1 && flagyy == 1) {
+			//StartCoroutine("Accele");
+			PostureStatus.postureString = "Shake now";
+		}
 
 	}
 
 	IEnumerator Accele(){
 		yield return new WaitForSeconds (2);
 
-		PostureStatus.postureString = "Don't Shake !";
+		PostureStatus.postureString = "Shake now";
 	}
 }
