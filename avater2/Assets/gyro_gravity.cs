@@ -19,5 +19,15 @@ public class gyro_gravity : MonoBehaviour {
 		if (acceleration.y >= 0.9) {
 			PostureStatus.postureString = "sakadathi";
 		}
+
+
+
+		/*if (acceleration.y >= 2.0) {
+			PostureStatus.postureString = "sakadathi";
+		}
+
+		if (acceleration.y >= -2.0) {
+			PostureStatus.postureString = "sakadathi";
+		}*/
 	}
 }
