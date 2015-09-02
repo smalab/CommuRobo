@@ -13,6 +13,8 @@ public class gyro_gravity : MonoBehaviour {
 		Vector3 acceleration = Input.acceleration;
 		Debug.Log (acceleration);
 
+
+
 		if (acceleration.y <= -0.9) {
 			PostureStatus.postureString = "normal";
 		}

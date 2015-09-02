@@ -12,7 +12,8 @@ public class gyro_up_down : MonoBehaviour {
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
 		Debug.Log (acceleration);
-		
+		Debug.Log(Input.gyro.rotationRateUnbiased.y);
+
 		if (acceleration.y <= -1.8) {
 			PostureStatus.postureString = "Down";
 			flag = 0;
@@ -25,9 +26,11 @@ public class gyro_up_down : MonoBehaviour {
 		
 		//flag ga 1 no toki yoko ni huruto yosiyosi tekinamononi
 
+		if (flag == 1 && Input.gyro.rotationRateUnbiased.y > 1.8) {
+			PostureStatus.postureString = "Ayasu";
 
 
-
+		}
 		/*if (acceleration.y >= 2.0) {
 			PostureStatus.postureString = "sakadathi";
 		}
