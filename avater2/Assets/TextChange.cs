@@ -34,6 +34,17 @@ public class TextChange : MonoBehaviour {
 		if (PostureStatus.postureString == "sakadathi") {
 			this.GetComponent<Text> ().text = "mou yametekure";
 		}
+
+		if (PostureStatus.postureString == "Up") {
+			this.GetComponent<Text> ().text = "agatte masu";
+		}
+		
+		if (PostureStatus.postureString == "Down") {
+			this.GetComponent<Text> ().text = "sagatte masu";
+		}
+
+
+
 	}
 
 }
