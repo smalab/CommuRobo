@@ -51,6 +51,10 @@ public class TextChange : MonoBehaviour {
 		}
 
 
+		if (PostureStatus.postureString == "Sokuten") {
+			this.GetComponent<Text> ().text = "Sokuten site masu";
+		}
+
 
 	}
 
