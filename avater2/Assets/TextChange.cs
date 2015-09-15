@@ -12,6 +12,13 @@ public class TextChange : MonoBehaviour {
 	// Update is called once per frame
 	// postureString ni yori text change
 	void Update () {
+		if (PostureStatus.postureString == "Default") {
+			this.GetComponent<Text> ().text = "as usual";
+		}
+
+
+
+		
 		if (PostureStatus.postureString == "nemui") {
 			//this.GetComponent<Text> ().text = PostureStatus.postureString;
 			this.GetComponent<Text> ().text = "I'm Sleepy";
@@ -54,6 +61,11 @@ public class TextChange : MonoBehaviour {
 		if (PostureStatus.postureString == "Sokuten") {
 			this.GetComponent<Text> ().text = "Sokuten site masu";
 		}
+
+		if (PostureStatus.postureString == "Zenkutu") {
+			this.GetComponent<Text> ().text = "Zenkutu site masu";
+		}
+
 
 
 	}
