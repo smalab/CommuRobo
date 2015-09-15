@@ -8,19 +8,13 @@ public class gyro_cartwheel : MonoBehaviour {
 	private bool reverse = false;
 
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-
-
-
-
 	// Update is called once per frame
+	// kasokudo de sokuten
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
 		Debug.Log (acceleration);
-		
+
+
 		if (acceleration.x <= 0.0 && acceleration.y <= -0.9) 
 			tate = true;
 
