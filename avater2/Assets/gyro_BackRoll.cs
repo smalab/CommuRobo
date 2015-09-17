@@ -19,14 +19,15 @@ public class gyro_BackRoll : MonoBehaviour {
 			tate = true;
 		
 		if (acceleration.z <= -1.0)
-			yoko = true;
+			yoko = false;
 		
 		if (acceleration.x >= -0.2 && acceleration.x <= 0.2 && acceleration.y >= 0.8 && acceleration.y <= 1.1  && acceleration.z <= 0.2) {
 			tate = false;
 			reverse = true;
 		}
 		
-		
+		if (acceleration.z >= 1.0)
+			yoko = true;
 		
 		if(tate == true && yoko == true && reverse == true){
 			PostureStatus.postureString = "Backten";
