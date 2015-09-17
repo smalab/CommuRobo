@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class gyro_gravity : MonoBehaviour {
+public class gyro_sakadachi : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -19,17 +19,10 @@ public class gyro_gravity : MonoBehaviour {
 			PostureStatus.postureString = "normal";
 		}
 		if (acceleration.y >= 0.9) {
-			PostureStatus.postureString = "sakadathi";
+			PostureStatus.postureString = "sakadachi";
 		}
 
 
 
-		/*if (acceleration.y >= 2.0) {
-			PostureStatus.postureString = "sakadathi";
-		}
-
-		if (acceleration.y >= -2.0) {
-			PostureStatus.postureString = "sakadathi";
-		}*/
 	}
 }

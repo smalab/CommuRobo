@@ -31,6 +31,9 @@ public class gyro_BackRoll : MonoBehaviour {
 		
 		if(tate == true && yoko == true && reverse == true){
 			PostureStatus.postureString = "Backten";
+			tate = false;
+			yoko = false;
+			reverse = false;
 		}
 		
 	}

@@ -40,7 +40,7 @@ public class TextChange : MonoBehaviour {
 			this.GetComponent<Text> ().text = "Let's sakadathi !";
 		}
 
-		if (PostureStatus.postureString == "sakadathi") {
+		if (PostureStatus.postureString == "sakadachi") {
 			this.GetComponent<Text> ().text = "mou yametekure";
 		}
 
