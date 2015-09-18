@@ -7,7 +7,6 @@ public class gyro_BackRoll : MonoBehaviour {
 	private bool yoko = false;
 	private bool reverse = false;
 	
-	
 	// Update is called once per frame
 	// kasokudo de sokuten
 	void Update () {
@@ -15,8 +14,9 @@ public class gyro_BackRoll : MonoBehaviour {
 		Debug.Log (acceleration);
 		
 		
-		if (acceleration.x <= 0.2 && acceleration.y <= -0.9) 
+		if (acceleration.x <= 0.2 && acceleration.y <= -0.9 ) {
 			tate = true;
+		}
 		
 		if (acceleration.z <= -1.0)
 			yoko = false;
