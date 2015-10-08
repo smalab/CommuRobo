@@ -31,7 +31,7 @@ public class Get_Acceleration : MonoBehaviour {
 		if (acceleration.z >= 0.95) {
 			SetProne();
 		}
-
+	
 	}
 
 	public void SetStand(){
@@ -51,5 +51,13 @@ public class Get_Acceleration : MonoBehaviour {
 	}
 	public void SetProne(){
 		this.GetComponent<Animator>().SetTrigger("prone");
+	}
+	public static void ResetTrigger(){
+		this.GetComponent<Animator> ().ResetTrigger ("stand");
+		this.GetComponent<Animator> ().ResetTrigger ("reverse");
+		this.GetComponent<Animator> ().ResetTrigger ("right");
+		this.GetComponent<Animator> ().ResetTrigger ("left");
+		this.GetComponent<Animator> ().ResetTrigger ("supine");
+		this.GetComponent<Animator> ().ResetTrigger ("prone");
 	}
 }
