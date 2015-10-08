@@ -25,10 +25,10 @@ public class Get_Acceleration : MonoBehaviour {
 		if (acceleration.x <= -0.4 && acceleration.x >= -0.9 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			SetLeft();
 		}
-		if (acceleration.z <= -1.0) {
+		if (acceleration.z <= -0.95) {
 			SetSupine();
 		}
-		if (acceleration.z >= 1.0) {
+		if (acceleration.z >= 0.95) {
 			SetProne();
 		}
 
