@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Get_Acceleration : MonoBehaviour {
 	// Use this for initialization
-	void Start () {
 
+	public static Animator anim;
+	void Start () {
+		anim = GetComponent<Animator> ();
 
 	}
 	
@@ -35,29 +37,35 @@ public class Get_Acceleration : MonoBehaviour {
 	}
 
 	public void SetStand(){
-		this.GetComponent<Animator>().SetTrigger("stand");
+		GetComponent<Animator>().SetTrigger("stand");
 	}
 	public void SetReverse(){
-		this.GetComponent<Animator>().SetTrigger("reverse");
+		GetComponent<Animator>().SetTrigger("reverse");
 	}
 	public void SetRight(){
-		this.GetComponent<Animator>().SetTrigger("right");
+		GetComponent<Animator>().SetTrigger("right");
 	}
 	public void SetLeft(){
-		this.GetComponent<Animator>().SetTrigger("left");
+		GetComponent<Animator>().SetTrigger("left");
 	}
 	public void SetSupine(){
-		this.GetComponent<Animator>().SetTrigger("supine");
+		GetComponent<Animator>().SetTrigger("supine");
 	}
 	public void SetProne(){
-		this.GetComponent<Animator>().SetTrigger("prone");
+		GetComponent<Animator>().SetTrigger("prone");
 	}
 	public static void ResetTrigger(){
-		this.GetComponent<Animator> ().ResetTrigger ("stand");
+		anim.ResetTrigger ("stand");
+		anim.ResetTrigger ("reverse");
+		anim.ResetTrigger ("right");
+		anim.ResetTrigger ("left");
+		anim.ResetTrigger ("supine");
+		anim.ResetTrigger ("prone");
+		/*this.GetComponent<Animator> ().ResetTrigger ("stand");
 		this.GetComponent<Animator> ().ResetTrigger ("reverse");
 		this.GetComponent<Animator> ().ResetTrigger ("right");
 		this.GetComponent<Animator> ().ResetTrigger ("left");
 		this.GetComponent<Animator> ().ResetTrigger ("supine");
-		this.GetComponent<Animator> ().ResetTrigger ("prone");
+		this.GetComponent<Animator> ().ResetTrigger ("prone");*/
 	}
 }
