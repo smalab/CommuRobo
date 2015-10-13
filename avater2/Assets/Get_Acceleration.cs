@@ -21,10 +21,10 @@ public class Get_Acceleration : MonoBehaviour {
 		if (acceleration.x >= -0.2 && acceleration.x <= 0.2 && acceleration.y >= 0.8 && acceleration.y <= 1.1 && acceleration.z <= 0.2) {
 			SetReverse();
 		}
-		if (acceleration.x >= 0.4 && acceleration.x <= 0.9 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
+		if (acceleration.x >= 0.8 && acceleration.x <= 1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			SetRight();
 		}
-		if (acceleration.x <= -0.4 && acceleration.x >= -0.9 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
+		if (acceleration.x <= -0.8 && acceleration.x >= -1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			SetLeft();
 		}
 		if (acceleration.z <= -0.95) {
@@ -67,5 +67,24 @@ public class Get_Acceleration : MonoBehaviour {
 		this.GetComponent<Animator> ().ResetTrigger ("left");
 		this.GetComponent<Animator> ().ResetTrigger ("supine");
 		this.GetComponent<Animator> ().ResetTrigger ("prone");*/
+	}
+
+	public static void ResetStand(){
+		anim.ResetTrigger ("stand");
+	}
+	public static void ResetReverse(){
+		anim.ResetTrigger ("reverse");
+	}
+	public static void ResetRight(){
+		anim.ResetTrigger ("right");
+	}
+	public static void ResetLeft(){
+		anim.ResetTrigger ("left");
+	}
+	public static void ResetSupine(){
+		anim.ResetTrigger ("supine");
+	}
+	public static void ResetProne(){
+		anim.ResetTrigger ("prone");
 	}
 }
