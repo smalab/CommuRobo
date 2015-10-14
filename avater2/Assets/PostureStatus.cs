@@ -13,7 +13,7 @@ public class PostureStatus : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (Input.gyro.rotationRateUnbiased.x);
+		//Debug.Log (Input.gyro.rotationRateUnbiased.x);
 		if (Input.gyro.rotationRateUnbiased.x < -2) {
 			postureString = "Please me Wake up";
 
