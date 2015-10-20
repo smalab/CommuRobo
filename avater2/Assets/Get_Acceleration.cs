@@ -61,12 +61,6 @@ public class Get_Acceleration : MonoBehaviour {
 		anim.ResetTrigger ("left");
 		anim.ResetTrigger ("supine");
 		anim.ResetTrigger ("prone");
-		/*this.GetComponent<Animator> ().ResetTrigger ("stand");
-		this.GetComponent<Animator> ().ResetTrigger ("reverse");
-		this.GetComponent<Animator> ().ResetTrigger ("right");
-		this.GetComponent<Animator> ().ResetTrigger ("left");
-		this.GetComponent<Animator> ().ResetTrigger ("supine");
-		this.GetComponent<Animator> ().ResetTrigger ("prone");*/
 	}
 
 	public static void ResetStand(){

@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class BackRoll: StateMachineBehaviour {
-	public AnimatorStateInfo stateInfo1;
- 	public AnimatorStateInfo stateInfo2;
+	 AnimatorStateInfo stateInfo1;
+ 	 AnimatorStateInfo stateInfo2;
 
 
 
@@ -12,18 +12,19 @@ public class BackRoll: StateMachineBehaviour {
 		stateInfo2 = Get_Acceleration.anim.GetCurrentAnimatorStateInfo (0);
 
 
+
 		if(stateInfo1.IsName("Base Layer.Stand")  && stateInfo2.IsName("Base Layer.Supine")){
 
 			Get_Acceleration.anim.SetTrigger("flagA");
 		}
 		if(stateInfo1.IsName("Base Layer.Supine") && stateInfo2.IsName("Base Layer.Reverse")){
-
+			Get_Acceleration.anim.SetTrigger("flagB");
 		}
 		if(stateInfo1.IsName("Base Layer.Reverse")  && stateInfo2.IsName("Base Layer.Prone")){
-	
+			Get_Acceleration.anim.SetTrigger("flagC");
 		}
 		if(stateInfo1.IsName("Base Layer.Prone")  && stateInfo2.IsName("Base Layer.Stand")){
-	
+			Get_Acceleration.anim.SetTrigger("flagD");
 		}
 
 

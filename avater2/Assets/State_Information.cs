@@ -18,6 +18,7 @@ public class State_Information : MonoBehaviour {
 	public void StateInfo(){
 		// animator no info get
 		AnimatorStateInfo stateInfo = Get_Acceleration.anim.GetCurrentAnimatorStateInfo (0);
+
 	}
 	public static void  Backten(){
 
