@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class BackRoll: StateMachineBehaviour {
-	 AnimatorStateInfo stateInfo1;
- 	 AnimatorStateInfo stateInfo2;
-
+	public static AnimatorStateInfo stateInfo1;
+ 	public static AnimatorStateInfo stateInfo2;
 
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		stateInfo2 = Get_Acceleration.anim.GetCurrentAnimatorStateInfo (0);
+		stateInfo1 = Get_Acceleration.anim.GetCurrentAnimatorStateInfo (0);
+
+
+		//stateInfo2 = Get_Acceleration.anim.GetCurrentAnimatorStateInfo (0);
 
 
 
-		if(stateInfo1.IsName("Base Layer.Stand")  && stateInfo2.IsName("Base Layer.Supine")){
+	/*	if(stateInfo1.IsName("Base Layer.Stand")  && stateInfo2.IsName("Base Layer.Supine")){
 
 			Get_Acceleration.anim.SetTrigger("flagA");
 		}
@@ -29,7 +32,7 @@ public class BackRoll: StateMachineBehaviour {
 
 
 
-		stateInfo1 = stateInfo2;
+		stateInfo1 = stateInfo2;*/
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
