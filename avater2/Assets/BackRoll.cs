@@ -6,10 +6,10 @@ public class BackRoll: StateMachineBehaviour {
 //	public static AnimatorStateInfo stateInfo1;
 //	public static AnimatorStateInfo stateInfo2;
 
-	int flagB = 0;
-	int flagA = 0;
-	int flagC = 0;
-	int flagK = 0;
+	public static int flagB = 0;
+	public static int flagA = 0;
+	public static int flagC = 0;
+	public static int flagK = 0;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

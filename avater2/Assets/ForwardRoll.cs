@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class ForwardRoll : StateMachineBehaviour {
-	int flagF = 0;
+	/*int flagF = 0;
 	int flagO = 0;
 	int flagR = 0;
-	int flagWard = 0;
+	int flagWard = 0;*/
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+	/*override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 0 && Get_Acceleration.rightflag == 0 &&
 		    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 0 && Get_Acceleration.proneflag == 0) {
 			flagF = 1;
@@ -32,7 +32,7 @@ public class ForwardRoll : StateMachineBehaviour {
 			Get_Acceleration.anim.SetTrigger("ForwardRoll");
 			StateToText.Zenten();
 		}
-	}
+	}*/
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

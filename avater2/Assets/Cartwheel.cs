@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Cartwheel : StateMachineBehaviour {
-	int flagC;
+public class CartWheel : StateMachineBehaviour {
+	/*int flagC;
 	int flagA;
 	int flagR;
-	int flagT;
+	int flagT;*/
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+/*	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 	if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 0 && Get_Acceleration.rightflag == 0 &&
 	    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 0 && Get_Acceleration.proneflag == 0) {
 		flagC = 1;
@@ -29,10 +29,10 @@ public class Cartwheel : StateMachineBehaviour {
 		flagT = 1;
 	}
 	if(flagC == 1 && flagA == 1 && flagR == 1 && flagT ==1){
-		Get_Acceleration.anim.SetTrigger("Cartwheel");
+		Get_Acceleration.anim.SetTrigger("CartWheel");
 		StateToText.Sokuten();
 	}	
-}
+}*/
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

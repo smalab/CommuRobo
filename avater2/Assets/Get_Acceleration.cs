@@ -29,6 +29,13 @@ public class Get_Acceleration : MonoBehaviour {
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
 		//Debug.Log (acceleration);
+		Debug.Log(standflag);
+		Debug.Log(reverseflag);
+		Debug.Log(rightflag);
+		Debug.Log(leftflag);
+		Debug.Log(supineflag);
+		Debug.Log(proneflag);
+
 
 		if (acceleration.x <= 0.1 && acceleration.y <= -0.9) {
 			SetStand();
@@ -89,6 +96,7 @@ public class Get_Acceleration : MonoBehaviour {
 		anim.ResetTrigger ("left");
 		anim.ResetTrigger ("supine");
 		anim.ResetTrigger ("prone");
+
 	}
 	public static void ResetFrag(){
 		standflag = 0;

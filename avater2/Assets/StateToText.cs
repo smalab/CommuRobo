@@ -12,11 +12,12 @@ public class StateToText : MonoBehaviour {
 	void Update () {
 	
 	}
-
+	public static void Default(){
+		PostureStatus.postureString = "Default";
+	}
 	public static void  Backten(){
 		PostureStatus.postureString = "Backten";
 	}
-
 	public static void  Zenten(){
 		PostureStatus.postureString = "Zenten";
 	}
