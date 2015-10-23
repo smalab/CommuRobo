@@ -88,6 +88,10 @@ public class Get_Acceleration : MonoBehaviour {
 	public void SetProne(){
 		GetComponent<Animator>().SetTrigger("prone");
 	}
+
+	public static void SetSleep(){
+		anim.SetTrigger("Sleeping");
+	}
 	public static void ResetTrigger(){
 		anim.ResetTrigger ("stand");
 		anim.ResetTrigger ("reverse");
@@ -131,4 +135,6 @@ public class Get_Acceleration : MonoBehaviour {
 	public static void ResetProne(){
 		anim.ResetTrigger ("prone");
 	}
+
+
 }
