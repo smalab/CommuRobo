@@ -6,33 +6,33 @@ public class BackRoll: StateMachineBehaviour {
 //	public static AnimatorStateInfo stateInfo1;
 //	public static AnimatorStateInfo stateInfo2;
 
-	public static int flagB = 0;
-	public static int flagA = 0;
-	public static int flagC = 0;
-	public static int flagK = 0;
+	public static int B = 0;
+	public static int A = 0;
+	public static int C = 0;
+	public static int K = 0;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 0 && Get_Acceleration.rightflag == 0 &&
 			Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 0 && Get_Acceleration.proneflag == 0) {
-			flagB = 1;
+			B = 1;
 		}
 
 		if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 0 && Get_Acceleration.rightflag == 0 &&
 		    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 5 && Get_Acceleration.proneflag == 0) {
-			flagA = 1;
+			A = 1;
 		}
 
 		if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 2 && Get_Acceleration.rightflag == 0 &&
 		    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 5 && Get_Acceleration.proneflag == 0) {
-			flagC = 1;
+			C = 1;
 		}
 
 		if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 2 && Get_Acceleration.rightflag == 0 &&
 		    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 5 && Get_Acceleration.proneflag == 6) {
-			flagK = 1;
+			K = 1;
 		}
-		if(flagB == 1 && flagA == 1 && flagC == 1 && flagK ==1){
+		if(B == 1 && A == 1 && C == 1 && K ==1){
 			Get_Acceleration.anim.SetTrigger("BackRoll");
 			StateToText.Backten();
 		}

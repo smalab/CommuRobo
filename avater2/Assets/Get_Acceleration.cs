@@ -36,7 +36,6 @@ public class Get_Acceleration : MonoBehaviour {
 		Debug.Log(supineflag);
 		Debug.Log(proneflag);
 
-
 		if (acceleration.x <= 0.1 && acceleration.y <= -0.9) {
 			SetStand();
 			standflag = 1;
@@ -105,6 +104,7 @@ public class Get_Acceleration : MonoBehaviour {
 		leftflag = 0;
 		supineflag = 0;
 		proneflag = 0;
+		PostureStatus.postureString = "Default";
 	}
 	/*public static void ResetArray(){
 		int i;

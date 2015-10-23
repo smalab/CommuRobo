@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class CartWheel : StateMachineBehaviour {
-	/*int flagC;
-	int flagA;
-	int flagR;
-	int flagT;*/
+	public static int flagC = 0;
+	public static int flagA = 0;
+	public static int flagR = 0;
+	public static int flagT = 0;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-/*	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 	if (Get_Acceleration.standflag == 1 && Get_Acceleration.reverseflag == 0 && Get_Acceleration.rightflag == 0 &&
 	    Get_Acceleration.leftflag == 0 && Get_Acceleration.supineflag == 0 && Get_Acceleration.proneflag == 0) {
 		flagC = 1;
@@ -32,7 +32,7 @@ public class CartWheel : StateMachineBehaviour {
 		Get_Acceleration.anim.SetTrigger("CartWheel");
 		StateToText.Sokuten();
 	}	
-}*/
+}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
