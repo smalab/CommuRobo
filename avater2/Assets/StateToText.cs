@@ -27,4 +27,15 @@ public class StateToText : MonoBehaviour {
 	public static void Sleep(){
 		PostureStatus.postureString = "nemui";
 	}
+
+	public static void Up(){
+		PostureStatus.postureString = "Up";
+	}
+	public static void Down(){
+		PostureStatus.postureString = "Down";
+	}
+	public static void Ayasu(){
+		PostureStatus.postureString = "Ayasu";
+	}
+
 }

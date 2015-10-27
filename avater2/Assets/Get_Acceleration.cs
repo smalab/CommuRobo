@@ -18,7 +18,7 @@ public class Get_Acceleration : MonoBehaviour {
 
 	//public static int[] statearray = new int[4];
 	public static int statenum = 0;
-
+	int flag = 0;
 
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -29,6 +29,7 @@ public class Get_Acceleration : MonoBehaviour {
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
 		//Debug.Log (acceleration);
+		Debug.Log ("flag no joukyou");
 		Debug.Log(standflag);
 		Debug.Log(reverseflag);
 		Debug.Log(rightflag);
@@ -36,7 +37,9 @@ public class Get_Acceleration : MonoBehaviour {
 		Debug.Log(supineflag);
 		Debug.Log(proneflag);
 
-		if (acceleration.x <= 0.1 && acceleration.y <= -0.9) {
+
+		//-0.9~-1.3 no aida
+		if (acceleration.x <= 0.1 && acceleration.y <= -0.9  && acceleration.y >= -1.3) {
 			SetStand();
 			standflag = 1;
 			statenum = 1;
@@ -67,7 +70,23 @@ public class Get_Acceleration : MonoBehaviour {
 			proneflag = 6;
 			statenum = 6;
 		}
-	
+
+
+		if (acceleration.y <= -1.8) {
+			SetDown();
+			flag = 0;
+			StateToText.Down();
+		}
+		if (acceleration.y >= -0.5) {
+			SetUp();
+			flag = 1;
+			StateToText.Up();
+		}
+		
+		if (flag == 1 && Input.gyro.rotationRateUnbiased.y > 1.8) {
+			StateToText.Ayasu();
+		}
+		
 	}
 
 	public void SetStand(){
@@ -92,6 +111,17 @@ public class Get_Acceleration : MonoBehaviour {
 	public static void SetSleep(){
 		anim.SetTrigger("Sleeping");
 	}
+
+
+	public static void SetUp(){
+		anim.SetTrigger("Up");
+	}
+	public static void SetDown(){
+		anim.SetTrigger("Down");
+	}
+
+
+
 	public static void ResetTrigger(){
 		anim.ResetTrigger ("stand");
 		anim.ResetTrigger ("reverse");
@@ -134,6 +164,12 @@ public class Get_Acceleration : MonoBehaviour {
 	}
 	public static void ResetProne(){
 		anim.ResetTrigger ("prone");
+	}
+	public static void ResetDown(){
+		anim.ResetTrigger ("Down");
+	}
+	public static void ResetUp(){
+		anim.ResetTrigger ("Up");
 	}
 
 
