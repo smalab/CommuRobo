@@ -17,6 +17,7 @@ public class Sleep : StateMachineBehaviour {
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		// flag demo nandemo ii to omou
 		Get_Acceleration.SetSleep ();
+		StateToText.Sleep ();
 	}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here

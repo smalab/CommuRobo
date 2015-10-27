@@ -24,4 +24,7 @@ public class StateToText : MonoBehaviour {
 	public static void Sokuten(){
 		PostureStatus.postureString = "Sokuten";
 	}
+	public static void Sleep(){
+		PostureStatus.postureString = "nemui";
+	}
 }
