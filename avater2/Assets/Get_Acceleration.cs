@@ -18,7 +18,7 @@ public class Get_Acceleration : MonoBehaviour {
 
 	//public static int[] statearray = new int[4];
 	public static int statenum = 0;
-	int flag = 0;
+	public static int flag = 0;
 
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -71,18 +71,21 @@ public class Get_Acceleration : MonoBehaviour {
 			statenum = 6;
 		}
 
+		//////////////////undoujoutai////////////////////////////////
 
 		if (acceleration.y <= -1.8) {
 			State_Information.SetDown();
 			flag = 0;
 			StateToText.Down();
 		}
-		if (acceleration.y >= -0.5) {
-			State_Information.SetUp();
-			flag = 1;
-			StateToText.Up();
+
+		if (standflag == 1 && reverseflag == 0 && rightflag == 0 && leftflag == 0 && supineflag == 0 && proneflag == 0) {
+			if (acceleration.y >= -0.3 && acceleration.z <= 0.3 && acceleration.z >= -0.3) {
+				State_Information.SetUp ();
+				flag = 1;
+				StateToText.Up ();
+			}
 		}
-		
 		if (flag == 1 && Input.gyro.rotationRateUnbiased.y > 1.8) {
 			StateToText.Ayasu();
 		}

@@ -11,6 +11,7 @@ public class gyro_up_down : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
+		Vector3 rotation = Input.gyro.rotationRateUnbiased;
 		Debug.Log (acceleration);
 		Debug.Log(Input.gyro.rotationRateUnbiased.y);
 
@@ -31,12 +32,5 @@ public class gyro_up_down : MonoBehaviour {
 
 
 		}
-		/*if (acceleration.y >= 2.0) {
-			PostureStatus.postureString = "sakadathi";
-		}
-
-		if (acceleration.y >= -2.0) {
-			PostureStatus.postureString = "sakadathi";
-		}*/
 	}
 }
