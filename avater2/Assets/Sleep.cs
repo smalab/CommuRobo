@@ -16,7 +16,7 @@ public class Sleep : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		// flag demo nandemo ii to omou
-		Get_Acceleration.SetSleep ();
+		State_Information.SetSleep ();
 		StateToText.Sleep ();
 	}
 

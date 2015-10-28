@@ -28,57 +28,57 @@ public class Get_Acceleration : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
-		//Debug.Log (acceleration);
-		Debug.Log ("flag no joukyou");
+		Debug.Log (acceleration);
+/*		Debug.Log ("flag no joukyou");
 		Debug.Log(standflag);
 		Debug.Log(reverseflag);
 		Debug.Log(rightflag);
 		Debug.Log(leftflag);
 		Debug.Log(supineflag);
-		Debug.Log(proneflag);
+		Debug.Log(proneflag);*/
 
 
 		//-0.9~-1.3 no aida
 		if (acceleration.x <= 0.1 && acceleration.y <= -0.9  && acceleration.y >= -1.3) {
-			SetStand();
+			State_Information.SetStand();
 			standflag = 1;
 			statenum = 1;
 
 		}
 		if (acceleration.x >= -0.1 && acceleration.x <= 0.1 && acceleration.y >= 0.8 && acceleration.y <= 1.1 && acceleration.z <= 0.2) {
-			SetReverse();
+			State_Information.SetReverse();
 			reverseflag = 2;
 			statenum = 2;
 		}
 		if (acceleration.x >= 0.8 && acceleration.x <= 1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
-			SetRight();
+			State_Information.SetRight();
 			rightflag = 3;
 			statenum = 3;
 		}
 		if (acceleration.x <= -0.8 && acceleration.x >= -1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
-			SetLeft();
+			State_Information.SetLeft();
 			leftflag = 4;
 			statenum = 4;
 		}
 		if (acceleration.z <= -0.95) {
-			SetSupine();
+			State_Information.SetSupine();
 			supineflag = 5;
 			statenum = 5;
 		}
 		if (acceleration.z >= 0.95) {
-			SetProne();
+			State_Information.SetProne();
 			proneflag = 6;
 			statenum = 6;
 		}
 
 
 		if (acceleration.y <= -1.8) {
-			SetDown();
+			State_Information.SetDown();
 			flag = 0;
 			StateToText.Down();
 		}
 		if (acceleration.y >= -0.5) {
-			SetUp();
+			State_Information.SetUp();
 			flag = 1;
 			StateToText.Up();
 		}
@@ -89,88 +89,9 @@ public class Get_Acceleration : MonoBehaviour {
 		
 	}
 
-	public void SetStand(){
-		GetComponent<Animator>().SetTrigger("stand");
-	}
-	public void SetReverse(){
-		GetComponent<Animator>().SetTrigger("reverse");
-	}
-	public void SetRight(){
-		GetComponent<Animator>().SetTrigger("right");
-	}
-	public void SetLeft(){
-		GetComponent<Animator>().SetTrigger("left");
-	}
-	public void SetSupine(){
-		GetComponent<Animator>().SetTrigger("supine");
-	}
-	public void SetProne(){
-		GetComponent<Animator>().SetTrigger("prone");
-	}
-
-	public static void SetSleep(){
-		anim.SetTrigger("Sleeping");
-	}
-
-
-	public static void SetUp(){
-		anim.SetTrigger("Up");
-	}
-	public static void SetDown(){
-		anim.SetTrigger("Down");
-	}
 
 
 
-	public static void ResetTrigger(){
-		anim.ResetTrigger ("stand");
-		anim.ResetTrigger ("reverse");
-		anim.ResetTrigger ("right");
-		anim.ResetTrigger ("left");
-		anim.ResetTrigger ("supine");
-		anim.ResetTrigger ("prone");
-
-	}
-	public static void ResetFrag(){
-		standflag = 0;
-		reverseflag = 0;
-		rightflag = 0;
-		leftflag = 0;
-		supineflag = 0;
-		proneflag = 0;
-		PostureStatus.postureString = "Default";
-	}
-	/*public static void ResetArray(){
-		int i;
-		for (i=0; i<4; i++) {
-			statearray [i] = 0;
-		}
-
-	}*/
-	public static void ResetStand(){
-		anim.ResetTrigger ("stand");
-	}
-	public static void ResetReverse(){
-		anim.ResetTrigger ("reverse");
-	}
-	public static void ResetRight(){
-		anim.ResetTrigger ("right");
-	}
-	public static void ResetLeft(){
-		anim.ResetTrigger ("left");
-	}
-	public static void ResetSupine(){
-		anim.ResetTrigger ("supine");
-	}
-	public static void ResetProne(){
-		anim.ResetTrigger ("prone");
-	}
-	public static void ResetDown(){
-		anim.ResetTrigger ("Down");
-	}
-	public static void ResetUp(){
-		anim.ResetTrigger ("Up");
-	}
 
 
 }
