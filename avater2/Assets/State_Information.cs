@@ -40,7 +40,7 @@ public class State_Information : MonoBehaviour {
 
 	}*/
 
-	public static void ResetPosutureTrigger(){
+	public static void ResetPostureTrigger(){
 		Get_Acceleration.anim.ResetTrigger ("stand");
 		Get_Acceleration.anim.ResetTrigger ("reverse");
 		Get_Acceleration.anim.ResetTrigger ("right");
