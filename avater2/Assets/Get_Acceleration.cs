@@ -80,7 +80,7 @@ public class Get_Acceleration : MonoBehaviour {
 		}
 
 		if (standflag == 1 && reverseflag == 0 && rightflag == 0 && leftflag == 0 && supineflag == 0 && proneflag == 0) {
-			if (acceleration.y >= -0.3 && acceleration.z <= 0.3 && acceleration.z >= -0.3) {
+			if (acceleration.y >= -0.5 && acceleration.z <= 0.3 && acceleration.z >= -0.3) {
 				State_Information.SetUp ();
 				flag = 1;
 				StateToText.Up ();

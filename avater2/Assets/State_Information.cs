@@ -20,7 +20,8 @@ public class State_Information : MonoBehaviour {
 		Get_Acceleration.anim.ResetTrigger ("left");
 		Get_Acceleration.anim.ResetTrigger ("supine");
 		Get_Acceleration.anim.ResetTrigger ("prone");
-		
+		Get_Acceleration.anim.ResetTrigger ("Up");
+		Get_Acceleration.anim.ResetTrigger ("Down");
 	}
 	public static void ResetFrag(){
 		Get_Acceleration.standflag = 0;
@@ -38,6 +39,19 @@ public class State_Information : MonoBehaviour {
 		}
 
 	}*/
+
+	public static void ResetPosutureTrigger(){
+		Get_Acceleration.anim.ResetTrigger ("stand");
+		Get_Acceleration.anim.ResetTrigger ("reverse");
+		Get_Acceleration.anim.ResetTrigger ("right");
+		Get_Acceleration.anim.ResetTrigger ("left");
+		Get_Acceleration.anim.ResetTrigger ("supine");
+		Get_Acceleration.anim.ResetTrigger ("prone");
+	}
+
+
+
+
 	public static void ResetStand(){
 		Get_Acceleration.anim.ResetTrigger ("stand");
 	}
