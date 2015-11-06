@@ -35,18 +35,18 @@ public class gyro_GetPosture : MonoBehaviour {
 		//0.2s gotoni data wo toru
 		time += Time.deltaTime;
 		if (time >= 0.1f) {
-			//Vector3 acceleration = Input.acceleration;
+			Vector3 accele = Input.acceleration;
 			//x = Mathf.RoundToInt (Input.gyro.attitude.x * 10.0f) + 5;
 			//y = Mathf.RoundToInt (Input.gyro.attitude.y * 10.0f) - 5;
 			//z = Mathf.RoundToInt (Input.gyro.attitude.z * 10.0f) - 5;
 
-			//x = Mathf.RoundToInt (acceleration.x * 10.0f);
-			//y = Mathf.RoundToInt (acceleration.y * 10.0f);
-			//z = Mathf.RoundToInt (acceleration.z * 10.0f);
+			x = Mathf.RoundToInt (accele.x * 10.0f);
+			y = Mathf.RoundToInt (accele.y * 10.0f);
+			z = Mathf.RoundToInt (accele.z * 10.0f);
 
-			x = Mathf.RoundToInt (Input.gyro.rotationRate.x * 10);
-			y = Mathf.RoundToInt (Input.gyro.rotationRate.y * 10);
-			z = Mathf.RoundToInt (Input.gyro.rotationRate.z * 10);
+			//x = Mathf.RoundToInt (Input.gyro.rotationRate.x * 10);
+			//y = Mathf.RoundToInt (Input.gyro.rotationRate.y * 10);
+			//z = Mathf.RoundToInt (Input.gyro.rotationRate.z * 10);
 
 
 			x1 = x.ToString ();
