@@ -32,7 +32,7 @@ public class gyro_GetPosture : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//0.2s gotoni data wo toru
+		//0.1s gotoni data wo toru
 		time += Time.deltaTime;
 		if (time >= 0.1f) {
 			Vector3 accele = Input.acceleration;
