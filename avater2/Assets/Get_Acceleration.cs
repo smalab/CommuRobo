@@ -28,18 +28,9 @@ public class Get_Acceleration : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
-		Debug.Log (acceleration);
-/*		Debug.Log ("flag no joukyou");
-		Debug.Log(standflag);
-		Debug.Log(reverseflag);
-		Debug.Log(rightflag);
-		Debug.Log(leftflag);
-		Debug.Log(supineflag);
-		Debug.Log(proneflag);*/
+		//Debug.Log (acceleration);
 
-
-		//-0.9~-1.3 no aida
-		if (acceleration.x <= 0.1 && acceleration.y <= -0.9  && acceleration.y >= -1.3) {
+		if (acceleration.x <= 0.1 && acceleration.y <= -0.9  && acceleration.y >= -1.1) {
 			State_Information.SetStand();
 			standflag = 1;
 			statenum = 1;
@@ -50,6 +41,13 @@ public class Get_Acceleration : MonoBehaviour {
 			reverseflag = 2;
 			statenum = 2;
 		}
+
+
+
+
+
+
+
 		if (acceleration.x >= 0.8 && acceleration.x <= 1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			State_Information.SetRight();
 			rightflag = 3;
