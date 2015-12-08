@@ -34,26 +34,18 @@ public class Get_Acceleration : MonoBehaviour {
 			State_Information.SetStand();
 			standflag = 1;
 			statenum = 1;
-
 		}
 		if (acceleration.x >= -0.1 && acceleration.x <= 0.1 && acceleration.y >= 0.8 && acceleration.y <= 1.1 && acceleration.z <= 0.2) {
 			State_Information.SetReverse();
 			reverseflag = 2;
 			statenum = 2;
 		}
-
-
-
-
-
-
-
-		if (acceleration.x >= 0.8 && acceleration.x <= 1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
+		if (acceleration.x >= 0.85 && acceleration.x <= 1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			State_Information.SetRight();
 			rightflag = 3;
 			statenum = 3;
 		}
-		if (acceleration.x <= -0.8 && acceleration.x >= -1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
+		if (acceleration.x <= -0.85 && acceleration.x >= -1.0 && acceleration.y >= -0.7 && acceleration.y <= 0.2) {
 			State_Information.SetLeft();
 			leftflag = 4;
 			statenum = 4;
@@ -78,7 +70,7 @@ public class Get_Acceleration : MonoBehaviour {
 		}
 
 		if (standflag == 1 && reverseflag == 0 && rightflag == 0 && leftflag == 0 && supineflag == 0 && proneflag == 0) {
-			if (/*acceleration.x <= 0.2 && acceleration.x >= -0.2 &&*/ acceleration.y >= -0.7 && acceleration.z <= 0.2 && acceleration.z >= -0.2) {
+			if (acceleration.x <= 0.4 && acceleration.x >= -0.4 && acceleration.y >= -0.7 && acceleration.z <= 0.2 && acceleration.z >= -0.2) {
 				State_Information.SetUp ();
 				flag = 1;
 				StateToText.Up ();
