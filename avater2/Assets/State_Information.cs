@@ -47,6 +47,9 @@ public class State_Information : MonoBehaviour {
 		Get_Acceleration.anim.ResetTrigger ("left");
 		Get_Acceleration.anim.ResetTrigger ("supine");
 		Get_Acceleration.anim.ResetTrigger ("prone");
+		Get_Acceleration.anim.ReSetTrigger("BackRoll");
+		Get_Acceleration.anim.ReSetTrigger("CartWheel");
+		Get_Acceleration.anim.ReSetTrigger("ForwardRoll");
 	}
 
 
