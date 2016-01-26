@@ -2,11 +2,15 @@
 using System.Collections;
 
 public class Reset_Prone : StateMachineBehaviour {
-
+	public AudioClip good;
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-	//
-	//}
+	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+		if (Get_Acceleration.sleepflag == 1) {
+			PostureStatus.postureString = "OK";
+			AudioSource.PlayClipAtPoint(good,new Vector3(0,0,0));
+			Get_Acceleration.sleepflag = 0;
+		}
+	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

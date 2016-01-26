@@ -20,8 +20,8 @@ public class State_Information : MonoBehaviour {
 		Get_Acceleration.anim.ResetTrigger ("left");
 		Get_Acceleration.anim.ResetTrigger ("supine");
 		Get_Acceleration.anim.ResetTrigger ("prone");
-		Get_Acceleration.anim.ResetTrigger ("Up");
-		Get_Acceleration.anim.ResetTrigger ("Down");
+		//Get_Acceleration.anim.ResetTrigger ("Up");
+		//Get_Acceleration.anim.ResetTrigger ("Down");
 	}
 	public static void ResetFrag(){
 		Get_Acceleration.standflag = 0;
@@ -30,15 +30,9 @@ public class State_Information : MonoBehaviour {
 		Get_Acceleration.leftflag = 0;
 		Get_Acceleration.supineflag = 0;
 		Get_Acceleration.proneflag = 0;
-		PostureStatus.postureString = "Default";
+		//PostureStatus.postureString = "Default";
 	}
-	/*public static void ResetArray(){
-		int i;
-		for (i=0; i<4; i++) {
-			statearray [i] = 0;
-		}
 
-	}*/
 
 	public static void ResetPostureTrigger(){
 		Get_Acceleration.anim.ResetTrigger ("stand");
@@ -47,9 +41,9 @@ public class State_Information : MonoBehaviour {
 		Get_Acceleration.anim.ResetTrigger ("left");
 		Get_Acceleration.anim.ResetTrigger ("supine");
 		Get_Acceleration.anim.ResetTrigger ("prone");
-		Get_Acceleration.anim.ReSetTrigger("BackRoll");
-		Get_Acceleration.anim.ReSetTrigger("CartWheel");
-		Get_Acceleration.anim.ReSetTrigger("ForwardRoll");
+		Get_Acceleration.anim.ResetTrigger("BackRoll");
+		Get_Acceleration.anim.ResetTrigger("CartWheel");
+		Get_Acceleration.anim.ResetTrigger("ForwardRoll");
 	}
 
 
@@ -102,12 +96,13 @@ public class State_Information : MonoBehaviour {
 	public static void SetSleep(){
 		Get_Acceleration.anim.SetTrigger("Sleeping");
 	}
-	public static void SetUp(){
+
+/*	public static void SetUp(){
 		Get_Acceleration.anim.SetTrigger("Up");
 	}
 	public static void SetDown(){
 		Get_Acceleration.anim.SetTrigger("Down");
-	}
+	}                                              */
 
 
 
