@@ -13,9 +13,8 @@ public class Get_Acceleration : MonoBehaviour {
 	public static int supineflag = 0;
 	public static int proneflag = 0;
 
-	public static int sleepflag = 0;
+	public static int sleepflag = 1;
 
-	//public static int[] statearray = new int[4];
 	public static int statenum = 0;
 	public static int flag = 0;
 
@@ -27,15 +26,11 @@ public class Get_Acceleration : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 acceleration = Input.acceleration;
-
 		if (acceleration.x <= 0.1 && acceleration.y <= -0.9 && acceleration.y >= -1.1) {
-
 			State_Information.SetStand ();
 			standflag = 1;
 			statenum = 1;
 			sleepflag = 1;
-
-
 		}
 		if (acceleration.x >= -0.1 && acceleration.x <= 0.1 && acceleration.y >= 0.8 && acceleration.y <= 1.1 && acceleration.z <= 0.2) {
 			State_Information.SetReverse ();
@@ -56,21 +51,12 @@ public class Get_Acceleration : MonoBehaviour {
 			State_Information.SetSupine ();
 			supineflag = 5;
 			statenum = 5;
-
 		}
 		if (acceleration.x <= 0.1 && acceleration.x >= -0.1 && acceleration.y >= -0.1 && acceleration.y <= 0.2 && acceleration.z >= 0.95) {
 			State_Information.SetProne ();
 			proneflag = 6;
 			statenum = 6;
-
 		}
-
-
-
-
-
-
-
 	}
 		//////////////////undoujoutai////////////////////////////////
 

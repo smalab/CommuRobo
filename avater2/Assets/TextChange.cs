@@ -20,31 +20,26 @@ public class TextChange : MonoBehaviour {
 
 		
 		if (PostureStatus.postureString == "nemui") {
-			//this.GetComponent<Text> ().text = PostureStatus.postureString;
 			this.GetComponent<Text> ().text = "I'm Sleepy";
 		}
 
 		if (PostureStatus.postureString == "Please me Wake up") {
-			//this.GetComponent<Text> ().text = PostureStatus.postureString;
 			this.GetComponent<Text> ().text = "Wake Up !!!";
 		}
 
 		if (PostureStatus.postureString == "Shake now") {
-			//this.GetComponent<Text> ().text = PostureStatus.postureString;
 			this.GetComponent<Text> ().text = "Don't Shake !!!!!";
 		}
 
 
 
 		if (PostureStatus.postureString == "normal") {
-			this.GetComponent<Text> ().text = "Let's sakadathi !";
+			this.GetComponent<Text> ().text = "Let's sakadachi !";
 		}
 
 		if (PostureStatus.postureString == "sakadachi") {
-			this.GetComponent<Text> ().text = "mou yametekure";
+			this.GetComponent<Text> ().text = "Tired・・・・";
 		}
-
-
 
 		if (PostureStatus.postureString == "Up") {
 			this.GetComponent<Text> ().text = "agatte masu";
@@ -71,12 +66,10 @@ public class TextChange : MonoBehaviour {
 		if (PostureStatus.postureString == "Zenkutu") {
 			this.GetComponent<Text> ().text = "Zenkutu site masu";
 		}
-
-		if (PostureStatus.postureString == "OK") {
-			this.GetComponent<Text> ().text = "OK!";
-		}
-		
-
-	}
+        if (PostureStatus.postureString == "Thank")
+        {
+            this.GetComponent<Text>().text = "Thank you!";
+        }
+    }
 
 }

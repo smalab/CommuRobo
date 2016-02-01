@@ -6,7 +6,7 @@ public class Reset_Supine : StateMachineBehaviour {
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 	if (Get_Acceleration.sleepflag == 1) {
-			PostureStatus.postureString = "OK";
+			PostureStatus.postureString = "Thank";
 			AudioSource.PlayClipAtPoint(Good,new Vector3(0,0,0));
 			Get_Acceleration.sleepflag = 0;
 		}
